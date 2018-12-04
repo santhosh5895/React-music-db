@@ -8,6 +8,8 @@ a {
     text-decoration: none
 }
 
+/* Banner */
+
 .banner .main_cover {
     background: url("../images/cover.png");
     height: 425px;
@@ -29,7 +31,7 @@ a {
 .banner span {
     display: block;
     height: 20px;
-    background-color: rgb(96, 183, 255);
+    background-color: #2196F3;
 }
 .loading{
     color: #2196F3;
@@ -37,4 +39,29 @@ a {
     margin: 20px 0px;
     width: 100%;
     text-align: center;
+}
+
+/* Artists List */
+
+.artists_list {
+    box-sizing: border-box;
+    padding:10px 30px;
+}
+
+.artists_list .artist_item {
+    display: inline-table;
+
+    height: 290px;
+    width: 290px;
+    background-size: cover !important;
+    margin: 10px;
+    position: relative;
+}
+
+.artists_list .artist_item div {
+    background-color: #2196F3;
+    right: 0;
+    color: #fff;
+    padding: 7px;
+    position: absolute;
 }
