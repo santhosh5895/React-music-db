@@ -7,6 +7,11 @@ const ArtistsList = ({data}) => {
             <div className="loading">Loading...</div>
         )
     };
+    if (data.error) {
+        return(
+            <div className="loading">{data.error.message}</div>
+        )
+    };
     const list = (artists) =>{
         if(artists){
             return artists.map(item => {

@@ -9,7 +9,8 @@ class Home extends Component{
         super(props);
         this.state = {
             artists:'',
-            isLoading: false
+            isLoading: false,
+            error: false
         }
     }
 
@@ -17,8 +18,15 @@ class Home extends Component{
         this.setState({isLoading:true});
         fetch(url_artists,{
             method:"GET"
-        }).then(response => response.json())
-        .then(data => {this.setState({artists:data, isLoading:false})});
+        }).then(response => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Something went wrong ...');
+            }
+          })
+        .then(data => {this.setState({artists:data, isLoading:false})})
+        .catch(error => this.setState({ error, isLoading: false }));
     }
 
     render(){
