@@ -10,7 +10,7 @@ a {
 
 .banner .main_cover {
     background: url("../images/cover.png");
-    height: 465px;
+    height: 425px;
     background-size: cover;
     position: relative;
     background-position: center;
@@ -30,4 +30,11 @@ a {
     display: block;
     height: 20px;
     background-color: rgb(96, 183, 255);
+}
+.loading{
+    color: #2196F3;
+    font-size: 40px;
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
 }
