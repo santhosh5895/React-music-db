@@ -50,7 +50,6 @@ a {
 
 .artists_list .artist_item {
     display: inline-table;
-
     height: 290px;
     width: 290px;
     background-size: cover !important;
@@ -70,4 +69,66 @@ a {
     font-size: 30px;
     font-weight: 100;
     margin: 20px 0px;
+}
+
+/* Header */
+
+header {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 33px;
+    border-bottom: 7px solid #0039cb;
+    color: #ffffff;
+    background: #2196F3;
+}
+
+/* Artist */
+
+.artist_bio {
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+.artist_bio .avatar span {
+    width:200px;
+    height: 200px;
+    display: block;
+    margin: 7px auto;
+    background-size: cover !important; 
+}
+.artist_bio h3 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 7px 0;
+}
+
+.artist_bio .bio_text {
+    font-weight: 100;
+    font-size: 14px;
+    color: #757575;
+}
+
+.album_list {
+    margin: 20px 25% 20px 25%;
+}
+
+.album_list::after {
+    clear: both;
+    display: table;
+    content:'';
+}
+
+.album_list > img {
+    width: 180px ;
+    height: 180px;
+    margin: 10px;
+    position: relative;
+}
+
+.album_header {
+    text-align: center;
+    font-weight: 100;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }

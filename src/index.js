@@ -4,13 +4,13 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 /* COMPONENTS */
 import Home from './component/home';
-import Artists from './component/artists';
+import Artist from './component/artist';
 
 const App = () =>(
     <BrowserRouter>
         <div>
             <Route exact path='/' component={Home}/>
-            <Route path='/artists/:artistId' component={Artists}/>
+            <Route path='/artist/:artistId' component={Artist}/>
         </div>
     </BrowserRouter>
 );
